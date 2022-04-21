@@ -1,0 +1,30 @@
+.top-part {
+    display: flex;
+    flex-direction: row;
+}
+.top-part img {
+    object-fit: contain;
+    align-self: start;
+}
+.character-detail {
+    flex-grow: 1;
+    padding: 32px;
+}
+.top-part > div {
+    padding: 0 20px;
+}
+.subtitle {
+    color: dimgrey;
+    max-width: 50vh;
+}
+.buttons  button {
+    text-transform: capitalize;
+}
+.bottom-part {
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom-part  > div{
+    flex-grow: 1;
+}
