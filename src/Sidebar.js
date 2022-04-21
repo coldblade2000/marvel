@@ -11,7 +11,7 @@ const Sidebar = ({characters, selCharacter, setSelCharacter}) => {
                     if (character.id === selCharacter.id)
                         classname += " selected-character-thumb"
                     return(
-                        <div className={classname} onClick={()=> setSelCharacter(character)}>
+                        <div className={classname} onClick={()=> setSelCharacter(character)} key={character.id}>
                             <img src={character.thumbnail.path+ "/standard_medium." + character.thumbnail.extension}
                                  alt={`${character.name} - ${character.id}`}
                                  title={`${character.name} - ${character.id}`}

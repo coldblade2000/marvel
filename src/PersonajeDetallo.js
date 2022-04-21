@@ -4,11 +4,11 @@ const PersonajeDetallo = ({selCharacter}) => {
     return selCharacter.thumbnail ? (
         <div className="character-detail">
 
-            <h3>{selCharacter.name}</h3>
 
             <div className="top-part">
                 <img src={selCharacter.thumbnail.path + "/portrait_fantastic." + selCharacter.thumbnail.extension} alt=""/>
                 <div>
+                    <h3>{selCharacter.name}</h3>
                     <p className="subtitle">ID {selCharacter.id} - {selCharacter.description}</p>
                     <div className="buttons">
                         {selCharacter.urls.map((url)=>{
